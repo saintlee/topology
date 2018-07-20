@@ -1,0 +1,30 @@
+# 路径，工作空间
+path:
+  src: src
+  build: dist
+# 入口,相对src路径
+entry:
+  # model：spa单页面;mpa多页面。没有配置js和html时,model才生效
+  model: mpa
+  js: /**/**.js
+  html: /**/**.html
+# 外部插件
+external:
+  jquery:
+    - '&'
+    - 'jQuery'
+    - 'window.$'
+    - 'window.jQuery'
+  d3:
+    - 'd3'
+  d3-tip:
+    - 'd3-tip'
+  d3-svg-legend:
+    - 'd3-svg-legend'
+# 服务
+server:
+  host: localhost
+  port: 8080
+# 插件
+plugin:
+  purify: false
