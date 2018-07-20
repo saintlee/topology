@@ -1,0 +1,2 @@
+/*! Copyright SaintLee <saint.lee@qq.com> */
+webpackJsonp([12],{6:function(e,s,n){"use strict";Object.defineProperty(s,"__esModule",{value:!0});var a=[{id:4,name:"系统节点",color:"#5a9bd5"}];s.legendSys=a,s.radiusSys=20,s.linkSys=200}},[6]);
