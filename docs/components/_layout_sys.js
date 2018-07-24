@@ -1,2 +1,0 @@
-/*! Copyright SaintLee <saint.lee@qq.com> */
-webpackJsonp([15],{13:function(e,t,i){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.heightSys=t.widthSys=void 0;var d=i(10),u=function(e){return e&&e.__esModule?e:{default:e}}(d),h=[(0,u.default)(".network").width(),(0,u.default)(".network").height()],n=h[0],o=h[1];t.widthSys=n,t.heightSys=o}},[13]);

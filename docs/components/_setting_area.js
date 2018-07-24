@@ -1,2 +1,0 @@
-/*! Copyright SaintLee <saint.lee@qq.com> */
-webpackJsonp([13],{2:function(e,a,r){"use strict";Object.defineProperty(a,"__esModule",{value:!0});var n={name:"window",children:[{id:"net",name:"互联网区域",area:50,sort:1},{id:"dmz",name:"DMZ域",area:60,sort:2},{name:"internal",children:[{id:"core",name:"核心域",area:30,sort:3},{id:"oa",name:"OA域",area:30,sort:4}]}]},o=[{id:0,name:"正常IP",color:"#6ead46"},{id:1,name:"中危IP",color:"#ffc102"},{id:2,name:"高危IP",color:"#ff0202"},{id:3,name:"威胁IP",color:"#000000"}];a.area=n,a.legendArea=o,a.radiusArea=15}},[2]);

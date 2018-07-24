@@ -1,2 +1,0 @@
-/*! Copyright SaintLee <saint.lee@qq.com> */
-webpackJsonp([10],{26:function(e,t,u){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){var t=(0,r.default)().attr("class","d3-tip").offset([-10,0]).html(function(e){var t=e.id;return e.desc&&e.desc.forEach(function(e){t+="<br/>"+(e.key?e.key+"： ":"")+e.value}),t});return e.call(t),t};var n=u(56),r=function(e){return e&&e.__esModule?e:{default:e}}(n)}},[26]);

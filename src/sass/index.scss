@@ -8,6 +8,14 @@ body {
   height: 100%;
 }
 
+@mixin user-select-disable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* 外层包装 */
 
 .network-wrapper {
@@ -36,6 +44,7 @@ body {
     height: auto;
     z-index: 1;
   }
+  /* 区域鼠标事件穿透 */
   .area {
     pointer-events: none;
   }
@@ -43,11 +52,7 @@ body {
   .link,
   .linetext,
   .node {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    @include user-select-disable;
     /* 不活跃，双击节点后，未关联的节点变成不活跃状态 */
     &.inactive {
       opacity: 0.3;
@@ -63,13 +68,9 @@ body {
     stroke-width: 8px;
   }
   .text {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
     font-size: 15px;
+    cursor: default;
+    @include user-select-disable;
   }
   /* 图例 */
   .legendCells {
@@ -77,11 +78,7 @@ body {
     .label {
       font-size: 14px;
       cursor: pointer;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+      @include user-select-disable;
       &.disable {
         opacity: 0.5;
       }
@@ -98,11 +95,7 @@ body {
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
   border-radius: 2px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  @include user-select-disable;
   z-index: 2;
   /* 提示箭头 */
   &:after {
