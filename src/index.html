@@ -17,6 +17,7 @@
   network.initArea({
     'nodes': [{
         'id': '192.168.111.1',
+        'name': '部门',
         'status': 0,
         'region': 'net',
         'desc': [{
@@ -49,6 +50,7 @@
         'status': 3,
         'region': 'oa'
       },
+
     ],
     'links': [{
         'source': '192.168.111.1',
@@ -57,10 +59,10 @@
         'desc': [{
           'key': '攻击事件',
           'value': 'web攻击'
-        },{
+        }, {
           'key': '攻击事件',
           'value': 'web攻击'
-        },{
+        }, {
           'key': '攻击事件',
           'value': 'web攻击'
         }]
@@ -79,6 +81,7 @@
       },
     ]
   });
+  network.flicker('192.168.111.1');
 
 </script>
 

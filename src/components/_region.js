@@ -25,6 +25,7 @@ export default function (vis) {
   // 分层计算
   treemap(root);
 
+
   // 绘制区域元素
   let areaSvg = vis.append('svg:g')
     .classed('region',true)
