@@ -23,8 +23,8 @@ export default function () {
       content = html.apply(this, args);
     let target = d3.event.target,
       domRect = target.getBoundingClientRect(),
-      scrollTop = document.documentElement.scrollTop,
-      scrollLeft = document.documentElement.scrollLeft;
+      scrollTop = document.body.scrollTop === 0 ? document.documentElement.scrollTop : document.body.scrollTop,
+      scrollLeft = document.body.scrollLeft === 0 ? document.documentElement.scrollLeft : document.body.scrollLeft;
 
     el.html(content)
       .style('opacity', 1)
@@ -68,7 +68,8 @@ export default function () {
       .style('top', 0)
       .style('opacity', 0)
       .style('pointer-events', 'none')
-      .style('box-sizing', 'border-box');
+      .style('box-sizing', 'border-box')
+      .style('line-height','22px');
     return elDom;
   }
 

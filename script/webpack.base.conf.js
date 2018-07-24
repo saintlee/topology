@@ -246,8 +246,8 @@ function getHtmlWebpackPlugins(_path) {
     filename = path.relative(config.absolutePath.src, val);
     option = {
       minify: {
-        removeComments: true,
-        collapseWhitespace: false
+        removeComments: false,
+        collapseWhitespace: true
       },
       template: val,
       // filename: path.basename(val),

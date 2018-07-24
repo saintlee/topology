@@ -11,14 +11,15 @@ export default function (data, vis, type) {
 
   // 创建node集合
   let node = vis.selectAll('g.node')
-    .data(data.nodes);
-  node.exit().remove();
+    .data(data.nodes); // UPDATE
 
-  node = node.enter()
+  node.exit().remove(); // EXIT
+
+  node = node.enter() // ENTER
     .append('svg:g')
     .classed('node', true)
     .attr('id', d => 'node-' + d.id)
-    .merge(node);
+    .merge(node); // ENTER + UPDATE
 
   // 移除其他干扰元素
   node.selectAll('.node-bg').remove();
@@ -35,7 +36,7 @@ export default function (data, vis, type) {
     // 节点文字
     node.append('svg:text')
       .attr('class', 'node-name')
-      .attr('dy', radiusSys+10)
+      .attr('dy', radiusSys + 10)
       .attr('text-anchor', 'middle')
       .attr('font-size', '14px')
       .attr('fill', '#000')

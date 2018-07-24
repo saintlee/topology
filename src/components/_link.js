@@ -9,6 +9,7 @@ export default function (data, vis) {
 
   let link = vis.selectAll('line.link')
     .data(data.links);
+
   link.exit().remove();
 
   /* eslint-disable no-extra-parens */
